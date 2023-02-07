@@ -35,7 +35,7 @@ def _pascal_helper(current: int, max: int, row: list[int], max_value_size: int) 
         new_row: list[int] = [1, *sums, 1]
         _pascal_helper(current + 1, max, new_row, max_value_size)
 
-
+# A very informative comment.
 def main():
     if len(argv) == 2:
         try:
