@@ -12,9 +12,9 @@ def _pascal_size_max(row: int) -> int:
     """Calculates an approximation of the number of digits in the largest
        number in the Pascal triangle of size n"""
     # the approximation is too obviously wrong for small numbers
-    #cache: list[int] = [1, 1, 1, 1, 1, 2, 2, 2, 2, 3]
-   # if row <= len(cache):
-        #return cache[row-1]
+    cache: list[int] = [1, 1, 1, 1, 1, 2, 2, 2, 2, 3]
+    if row <= len(cache):
+        return cache[row-1]
 
     # math stuff going on... using Stirling's approximation
     n: float = row / 2
